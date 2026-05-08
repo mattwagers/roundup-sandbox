@@ -1,11 +1,11 @@
 [build]
-  command = "quarto render"
+  command = "bash build.sh"
   publish = "_site"
 
 [build.environment]
-  QUARTO_VERSION = "1.6.0"
+  QUARTO_VERSION = "1.6.40"
 
 [[redirects]]
-  from = "/"
-  to = "/index.html"
+  from  = "/"
+  to    = "/index.html"
   status = 200
