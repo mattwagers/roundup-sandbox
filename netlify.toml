@@ -3,7 +3,7 @@
   publish = "_site"
 
 [build.environment]
-  QUARTO_VERSION = "1.6.40"
+  QUARTO_VERSION = "1.9.37"
 
 [[redirects]]
   from  = "/"
