@@ -1,0 +1,11 @@
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    fig-align: center
+
+execute:
+  warning: false
+  message: false

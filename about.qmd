@@ -1,0 +1,26 @@
+---
+title: "About"
+---
+
+## What is The Consortium Blog?
+
+The Consortium Blog is a shared scholarly space for collaborative research
+communication. It is maintained by a group of researchers committed to open
+science, reproducible analysis, and transparent methods.
+
+## What we write about
+
+Posts on this blog span a range of topics central to empirical research:
+
+- **Methods notes** — walkthroughs of statistical or computational techniques
+- **Data explorations** — descriptive and exploratory analyses of public or
+  shared datasets
+- **Replications** — attempts to reproduce published findings with new data
+  or updated code
+- **Tutorials** — step-by-step guides for tools, packages, and workflows
+
+## Contributing
+
+All consortium members are welcome to contribute posts. See the
+[CONTRIBUTING guide](CONTRIBUTING.md) for branch naming conventions, post
+folder structure, required front matter, and the Git/PR workflow.

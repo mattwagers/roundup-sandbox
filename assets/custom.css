@@ -1,0 +1,16 @@
+/* Widen the main content column slightly */
+.quarto-container .column-body,
+.page-columns .column-body {
+  max-width: 860px;
+}
+
+/* Smaller pill labels for post categories */
+.quarto-category {
+  font-size: 0.78rem;
+}
+
+/* Softer corners on code blocks */
+pre.sourceCode,
+div.sourceCode {
+  border-radius: 6px;
+}

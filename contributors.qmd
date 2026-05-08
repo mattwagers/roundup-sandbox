@@ -1,0 +1,27 @@
+---
+title: "Contributors"
+---
+
+Meet the researchers behind The Consortium Blog.
+
+::: {.grid}
+
+::: {.g-col-4}
+### Alex Rivera
+**Field:** Computational Social Science
+**Email:** a.rivera@university.edu
+:::
+
+::: {.g-col-4}
+### Jane Smith
+**Field:** Biostatistics
+**Email:** j.smith@university.edu
+:::
+
+::: {.g-col-4}
+### Marcus Chen
+**Field:** Cognitive Neuroscience
+**Email:** m.chen@university.edu
+:::
+
+:::

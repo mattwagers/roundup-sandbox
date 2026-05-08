@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "The Consortium Blog"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: contributors.qmd
+        text: Contributors
+    right:
+      - icon: github
+        href: https://github.com/placeholder/consortium-blog
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 The Consortium"
+    right:
+      - icon: github
+        href: https://github.com/placeholder/consortium-blog
+        aria-label: GitHub
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: assets/custom.css
+    toc: true
+    code-fold: true
+    code-tools: true
+
+execute:
+  freeze: auto
