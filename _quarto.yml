@@ -1,8 +1,6 @@
 project:
   type: website
-  render:
-    - "**"
-    - "!SPEC.md"
+
 
 website:
   title: "The Consortium Blog"

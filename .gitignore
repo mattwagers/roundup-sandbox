@@ -8,4 +8,4 @@ pagefind/             # local pagefind output
 .DS_Store
 
 **/*.quarto_ipynb
-SPEC.md
+_docs/
