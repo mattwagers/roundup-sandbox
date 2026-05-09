@@ -16,6 +16,15 @@ website:
       - icon: github
         href: https://github.com/your-org/blog
   search: true
+  comments:
+    giscus:
+      repo: mattwagers/roundup-sandbox
+      repo-id: R_kgDOSYLa8w
+      category: Post Comments
+      category-id: DIC_kwDOSYLa884C8oRx
+      mapping: pathname
+      reactions-enabled: true
+      loading: lazy
   page-footer:
     left: "© 2026 The Consortium"
     right:
@@ -32,6 +41,9 @@ format:
     toc: true
     code-fold: true
     code-tools: true
+    include-in-header:
+      - text: |
+          <script src="https://hypothes.is/embed.js" async></script>
 
 execute:
   freeze: auto
