@@ -1,6 +1,7 @@
 project:
   type: website
   render:
+    - "**"
     - "!SPEC.md"
 
 website:
