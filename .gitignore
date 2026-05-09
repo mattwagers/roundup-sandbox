@@ -1,6 +1,8 @@
-/.quarto/
 /_site/
+/.quarto/
 /posts/**/*_cache/
+/_freeze/pagefind/    # if pagefind output lands in _freeze
+pagefind/             # local pagefind output
 *.RData
 *.Rhistory
 .DS_Store

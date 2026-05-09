@@ -13,8 +13,8 @@ website:
         text: Contributors
     right:
       - icon: github
-        href: https://github.com/placeholder/consortium-blog
-        aria-label: GitHub
+        href: https://github.com/your-org/blog
+  search: true
   page-footer:
     left: "© 2026 The Consortium"
     right:
