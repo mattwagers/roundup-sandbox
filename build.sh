@@ -9,5 +9,8 @@ export PATH="${HOME}/quarto/bin:$PATH"
 
 echo "→ Quarto version: $(quarto --version)"
 
+echo "→ Restoring R packages"
+Rscript -e "install.packages('renv', repos='https://cloud.r-project.org'); renv::restore()"
+
 echo "→ Rendering site"
 quarto render
