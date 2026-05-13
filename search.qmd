@@ -17,4 +17,4 @@ title: "Search"
 
 ## Searching comments
 
-Looking for something in the comments? Post comments are stored as GitHub Discussions and can be searched directly on GitHub at [github.com/YOUR-ORG/YOUR-REPO/discussions](https://github.com/YOUR-ORG/YOUR-REPO/discussions).
+Looking for something in the comments? Post comments are stored as GitHub Discussions and can be searched directly on GitHub at [github.com/mattwagers/roundup-sandbox/discussions](https://github.com/mattwagers/roundup-sandbox/discussions).
