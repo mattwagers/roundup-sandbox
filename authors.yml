@@ -1,0 +1,26 @@
+- id: jane-smith
+  name: Jane Smith
+  status: editor
+  url: https://example.com/jane-smith
+  orcid: 0000-0000-0000-0001
+  affiliation: UC Santa Cruz
+  notes: "Ecologist specializing in population dynamics and Bayesian methods."
+
+- id: alex-johnson
+  name: Alex Johnson
+  status: editor
+  orcid: 0000-0000-0000-0002
+  affiliation: Stanford University
+  notes: "Computational biologist. Interests: phylogenetics, reproducible workflows."
+
+- id: sam-lee
+  name: Sam Lee
+  status: member
+  url: https://example.com/sam-lee
+  affiliation: UC Berkeley
+
+- id: robin-patel
+  name: Robin Patel
+  status: guest
+  url: https://example.com/robin-patel
+  notes: "Visiting researcher. Data visualization and science communication."

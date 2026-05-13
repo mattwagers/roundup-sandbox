@@ -2,26 +2,89 @@
 title: "Contributors"
 ---
 
-Meet the researchers behind The Consortium Blog.
+```{r}
+#| echo: false
+#| results: asis
 
-::: {.grid}
+library(yaml)
 
-::: {.g-col-4}
-### Alex Rivera
-**Field:** Computational Social Science
-**Email:** a.rivera@university.edu
-:::
+authors <- yaml::read_yaml("authors.yml")
 
-::: {.g-col-4}
-### Jane Smith
-**Field:** Biostatistics
-**Email:** j.smith@university.edu
-:::
+last_name <- function(x) tail(strsplit(x$name, " ")[[1]], 1)
+editors   <- Filter(function(x) x$status == "editor", authors)
+others    <- Filter(function(x) x$status != "editor", authors)
+editors   <- editors[order(sapply(editors, last_name))]
+others    <- others[order(sapply(others,  last_name))]
+sorted    <- c(editors, others)
 
-::: {.g-col-4}
-### Marcus Chen
-**Field:** Cognitive Neuroscience
-**Email:** m.chen@university.edu
-:::
+status_badge <- function(status) {
+  color <- switch(status,
+    editor  = "background:#2c6e49;color:#fff;",
+    member  = "background:#1d4e89;color:#fff;",
+    guest   = "background:#6c757d;color:#fff;",
+    "background:#aaa;color:#fff;"
+  )
+  sprintf(
+    '<span style="font-size:0.72em;padding:2px 8px;border-radius:10px;%s">%s</span>',
+    color, tools::toTitleCase(status)
+  )
+}
 
-:::
+orcid_badge <- function(orcid) {
+  sprintf(
+    '<a href="https://orcid.org/%s" target="_blank" style="text-decoration:none;">
+       <img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png"
+            style="vertical-align:middle;margin-right:4px;">
+       <span style="font-size:0.8em;color:#a6ce39;">%s</span>
+     </a>',
+    orcid, orcid
+  )
+}
+
+photo_html <- function(id, name) {
+  path <- file.path("assets", "authors", paste0(id, ".jpg"))
+  if (file.exists(path)) {
+    sprintf(
+      '<img src="%s" alt="%s"
+            style="width:90px;height:90px;object-fit:cover;
+                   border-radius:50%%;margin-bottom:8px;">',
+      path, name
+    )
+  } else {
+    ""
+  }
+}
+
+cards <- lapply(sorted, function(a) {
+  name_html <- if (!is.null(a$url)) {
+    sprintf('<a href="%s" target="_blank" style="font-weight:600;font-size:1.05em;
+             text-decoration:none;">%s</a>', a$url, a$name)
+  } else {
+    sprintf('<span style="font-weight:600;font-size:1.05em;">%s</span>', a$name)
+  }
+
+  lines <- c(
+    photo_html(a$id, a$name),
+    name_html,
+    "<br>",
+    status_badge(a$status),
+    if (!is.null(a$orcid))       paste0("<br>", orcid_badge(a$orcid))                    else "",
+    if (!is.null(a$affiliation)) paste0("<br><small>", a$affiliation, "</small>")         else "",
+    if (!is.null(a$notes))       paste0("<br><small style='color:#555;'>", a$notes, "</small>") else ""
+  )
+
+  sprintf(
+    '<div class="g-col-12 g-col-sm-6 g-col-md-4">
+       <div style="border:1px solid #e0e0e0;border-radius:8px;padding:16px;
+                   text-align:center;height:100%%;">
+         %s
+       </div>
+     </div>',
+    paste(lines, collapse = "\n")
+  )
+})
+
+cat('::: {.grid}\n')
+cat(paste(cards, collapse = "\n\n"))
+cat('\n:::')
+```
