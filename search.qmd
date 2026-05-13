@@ -1,0 +1,20 @@
+---
+title: "Search"
+---
+
+<div id="search"></div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', async () => {
+    const { PagefindUI } = await import('/pagefind/pagefind-ui.js');
+    new PagefindUI({ 
+      element: '#search',
+      showImages: false,
+      openFilters: ['Categories']
+    });
+  });
+</script>
+
+## Searching comments
+
+Looking for something in the comments? Post comments are stored as GitHub Discussions and can be searched directly on GitHub at [github.com/YOUR-ORG/YOUR-REPO/discussions](https://github.com/YOUR-ORG/YOUR-REPO/discussions).

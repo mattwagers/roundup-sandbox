@@ -16,6 +16,15 @@ website:
       - icon: github
         href: https://github.com/your-org/blog
   search: true
+  comments:
+    giscus:
+      repo: YOUR-ORG/YOUR-REPO
+      repo-id: YOUR-REPO-ID
+      category: Post Comments
+      category-id: YOUR-CATEGORY-ID
+      mapping: pathname
+      reactions-enabled: true
+      loading: lazy
   page-footer:
     left: "© 2026 The Consortium"
     right:
