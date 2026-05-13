@@ -12,10 +12,10 @@ execute:
 
 comments:
   giscus:
-    repo: YOUR-ORG/YOUR-REPO
-    repo-id: YOUR-REPO-ID
+    repo: mattwagers/roundup-sandbox
+    repo-id: R_kgDOSYLa8w
     category: Post Comments
-    category-id: YOUR-CATEGORY-ID
+    category-id: DIC_kwDOSYLa884C8oRx
     mapping: pathname
     reactions-enabled: true
     loading: lazy
