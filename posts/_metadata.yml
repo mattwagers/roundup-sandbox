@@ -9,3 +9,13 @@ format:
 execute:
   warning: false
   message: false
+
+comments:
+  giscus:
+    repo: mattwagers/roundup-sandbox
+    repo-id: R_kgDOSYLa8w
+    category: Post Comments
+    category-id: DIC_kwDOSYLa884C8oRx
+    mapping: pathname
+    reactions-enabled: true
+    loading: lazy

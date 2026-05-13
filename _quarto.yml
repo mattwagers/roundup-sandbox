@@ -12,6 +12,8 @@ website:
         text: About
       - href: contributors.qmd
         text: Contributors
+      - href: search.qmd
+        text: Search
     right:
       - icon: github
         href: https://github.com/your-org/blog
