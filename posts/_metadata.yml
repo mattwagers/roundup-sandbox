@@ -11,4 +11,11 @@ execute:
   message: false
 
 comments:
-  giscus: true
+  giscus:
+    repo: YOUR-ORG/YOUR-REPO
+    repo-id: YOUR-REPO-ID
+    category: Post Comments
+    category-id: YOUR-CATEGORY-ID
+    mapping: pathname
+    reactions-enabled: true
+    loading: lazy
