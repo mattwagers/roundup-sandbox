@@ -13,7 +13,6 @@ echo "→ Rendering site"
 quarto render
 
 echo "→ Staging changes"
-git add -u
 git add _freeze/
 
 if git diff --cached --quiet; then
