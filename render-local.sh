@@ -21,5 +21,5 @@ if git diff --cached --quiet; then
 else
   git commit -m "$MSG"
   echo "→ Pushing to $(git rev-parse --abbrev-ref HEAD)"
-  git push
+  git push -u origin HEAD
 fi

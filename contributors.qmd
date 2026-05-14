@@ -84,7 +84,7 @@ cards <- lapply(sorted, function(a) {
   )
 })
 
-cat('::: {.grid}\n')
+cat('<div class="grid">\n')
 cat(paste(cards, collapse = "\n\n"))
-cat('\n:::')
+cat('\n</div>')
 ```
