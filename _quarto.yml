@@ -3,6 +3,7 @@ project:
 
 
 website:
+  site-url: https://majestic-palmier-4ce0f2.netlify.app
   title: "The Consortium Blog"
   navbar:
     left:
