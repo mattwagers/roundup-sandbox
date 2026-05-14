@@ -11,7 +11,13 @@
   status: editor
   orcid: 0000-0000-0000-0002
   affiliation: University of Maryland
-  notes: "Gallistelian neuroscience"
+  notes: "Read your Gallistel!"
+
+- id: dave-kush
+  name: Dave Kush
+  status: flaneur
+  orcid: 0000-0000-0000-0002
+  affiliation: University of Toronto
 
 - id: ming-xiang
   name: Ming Xiang
