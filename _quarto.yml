@@ -29,7 +29,7 @@ website:
 format:
   html:
     theme:
-      light: litera
+      light: brite
       dark: superhero
     css: assets/custom.css
     toc: true
