@@ -29,7 +29,7 @@ website:
 format:
   html:
     theme:
-      light: zephyr
+      light: quartz
       dark: superhero
     css: assets/custom.css
     toc: true
