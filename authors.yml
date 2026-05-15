@@ -1,0 +1,32 @@
+- id: brian-dillon
+  name: Brian Dillon
+  status: editor
+  url: https://people.umass.edu/bwdillon/
+  orcid: 0000-0000-0000-0001
+  affiliation: UMass Amherst
+  notes: "Techno-optimist"
+
+- id: ellen-lau
+  name: Ellen Lau
+  status: editor
+  orcid: 0000-0000-0000-0002
+  affiliation: University of Maryland
+  notes: "Read your Gallistel!"
+
+- id: dave-kush
+  name: Dave Kush
+  status: flaneur
+  orcid: 0000-0000-0000-0002
+  affiliation: University of Toronto
+
+- id: ming-xiang
+  name: Ming Xiang
+  status: editor
+  url: https://example.com/sam-lee
+  affiliation: University of Chicago
+
+- id: matt-wagers
+  name: Matt Wagers
+  status: guest
+  url: https://getyarn.io/yarn-clip/caab1389-d5a8-4572-b14e-a2eba31afc97
+  notes: "Avec plaisir"

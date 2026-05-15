@@ -3,6 +3,7 @@ project:
 
 
 website:
+  site-url: https://majestic-palmier-4ce0f2.netlify.app
   title: "The Consortium Blog"
   navbar:
     left:
@@ -28,8 +29,8 @@ website:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
+      light: litera
+      dark: superhero
     css: assets/custom.css
     toc: true
     code-fold: true

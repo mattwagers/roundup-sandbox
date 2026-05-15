@@ -11,3 +11,6 @@ echo "→ Quarto version: $(quarto --version)"
 
 echo "→ Rendering site"
 quarto render
+
+echo "→ Building search index"
+npx -y pagefind --site _site
