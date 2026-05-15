@@ -29,8 +29,8 @@ website:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
+      light: zephyr
+      dark: superhero
     css: assets/custom.css
     toc: true
     code-fold: true
